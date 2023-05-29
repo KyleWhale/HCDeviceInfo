@@ -16,25 +16,25 @@
 
 @implementation HDDevice
 
-- (NSString *)app_version {
-    NSDictionary * infoDictionary = [[NSBundle mainBundle] infoDictionary];
-    NSString * version = infoDictionary[@"CFBundleShortVersionString"];
+- (NSString *)version {
+    NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
+    NSString *version = infoDictionary[@"CFBundleShortVersionString"];
     return version;
 }
 
-- (NSString *)device_name {
+- (NSString *)name {
     return UIDevice.currentDevice.name;
 }
 
-- (NSString *)device_model {
+- (NSString *)model {
     return [[UIDevice currentDevice] model];
 }
 
-- (NSString *)device_system_name {
+- (NSString *)systemName {
     return  [[UIDevice currentDevice] systemName];
 }
 
-- (NSString *)device_system_version {
+- (NSString *)systemVersion {
     return  [[UIDevice currentDevice] systemVersion];
 }
 
@@ -49,7 +49,7 @@
     return currentLanguage;
 }
 
-- (NSString *)device_model_name {
+- (NSString *)modelName {
     size_t size;
     int number = sysctlbyname("hw.machine", NULL, &size, NULL, 0);
     char *machine = (char *)malloc(size);

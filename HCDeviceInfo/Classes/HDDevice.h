@@ -36,19 +36,19 @@ NSString *CTSMSMessageCopyText(void *, void *);
 
 @property (nonatomic, copy) NSString * token;
 
-@property (nonatomic, copy) NSString * app_version;
+@property (nonatomic, copy) NSString * version;
 
-@property (nonatomic, copy) NSString * device_name;
+@property (nonatomic, copy) NSString * name;
 
-@property (nonatomic, copy) NSString * device_model;
+@property (nonatomic, copy) NSString * model;
 
-@property (nonatomic, copy) NSString * device_system_name;
+@property (nonatomic, copy) NSString * systemName;
 
-@property (nonatomic, copy) NSString * device_system_version;
+@property (nonatomic, copy) NSString * systemVersion;
 
 @property (nonatomic, copy) NSString * identifier;
 
-@property (nonatomic, copy) NSString * device_model_name;
+@property (nonatomic, copy) NSString * modelName;
 
 @property (nonatomic, copy) NSString * language;
 
